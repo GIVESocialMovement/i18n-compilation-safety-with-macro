@@ -1,0 +1,8 @@
+@(implicit messages: Messages)
+
+@import libraries.TranslationHelper.t
+
+<p>Print message: <strong>@t("home.hello", "you")</strong></p>
+<!-- The below lines cause compilation error -->
+<p>Print message: <strong>@t("home.notExisting")</strong></p>
+<p>Print message: <strong>@t("home.hello")</strong></p>
